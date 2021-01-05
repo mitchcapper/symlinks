@@ -106,5 +106,6 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Final program
+# Final products
 /symlinks
+/symlinks.8
