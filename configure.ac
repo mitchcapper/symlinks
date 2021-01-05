@@ -17,6 +17,11 @@ AC_CHECK_HEADERS([fcntl.h malloc.h stddef.h stdlib.h string.h sys/param.h unistd
 # Checks for typedefs, structures, and compiler characteristics.
 AC_TYPE_SIZE_T
 
+# Get flags needed for large file support, if any
+LFS_CFLAGS=$(getconf LFS_CFLAGS 2>/dev/null)
+AM_CFLAGS="-Wall -Wstrict-prototypes ${LFS_CFLAGS}"
+AC_SUBST([AM_CFLAGS])
+
 # Checks for library functions.
 AC_FUNC_LSTAT_FOLLOWS_SLASHED_SYMLINK
 AC_FUNC_MALLOC
