@@ -47,6 +47,8 @@ Usage
 Changes
 -------
 
+#### v1.5.0
+- Added gnulib and windows support :)
 #### v1.4.3
 - Fixed LFS support bug that caused erratic behavior on 32-bit systems.
 
