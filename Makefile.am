@@ -1,5 +1,5 @@
-AUTOMAKE_OPTIONS = foreign no-dependencies
-   SUBDIRS = m4 lib 
+AUTOMAKE_OPTIONS = foreign
+SUBDIRS = m4 lib  
 
 
 LDADD = lib/libsymlinks.a
